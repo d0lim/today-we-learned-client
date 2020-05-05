@@ -1,8 +1,6 @@
-@import "~antd/dist/antd.css";
-
-/* .App {
+.App {
   text-align: center;
-} */
+}
 
 .App-logo {
   height: 40vmin;
@@ -37,19 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 28px 16px 0;
-  float: left;
-}
-
-.site-layout-background {
-  background: #fff;
-}
-.logo {
-  background: rgba(255, 255, 255, 0.3);
 }
