@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import { theme, ThemeProvider, CSSReset } from "@chakra-ui/core";
+import HomePage from "./pages/home/HomePage";
 
 // const breakpoints = ["360px", "768px", "1024px", "1440px"];
 // breakpoints.sm = breakpoints[0];
@@ -14,11 +13,6 @@ import { theme, ThemeProvider, CSSReset } from "@chakra-ui/core";
 //   breakpoints,
 // };
 
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <CSSReset />
-    <Header />
-  </ThemeProvider>
-);
+const App = () => <HomePage />;
 
 export default App;
