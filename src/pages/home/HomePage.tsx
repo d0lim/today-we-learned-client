@@ -1,16 +1,28 @@
 import React from "react";
 import MainTemplate from "../../components/main/MainTemplate";
 import Header from "../../components/common/Header";
+import styled from "@emotion/styled";
+import SideBar from "../../components/SideBar";
+import { Flex } from "@chakra-ui/core";
+import Feed from "../../components/common/Feed";
 
 export type HomePageProps = {};
+
+const Content = styled.div`
+  width: 100%;
+  padding: 0;
+`;
 
 const HomePage = (props: HomePageProps) => {
   return (
     <MainTemplate>
-      <Header />
-      <div>
-        음... 이게 컨텐트 디브가 돼야겠지요..? 사이드바나 뭐 아래에 그것들...
-      </div>
+      <Flex minHeight="100vh">
+        <SideBar />
+        <Content>
+          <Header />
+          <Feed />
+        </Content>
+      </Flex>
     </MainTemplate>
   );
 };
