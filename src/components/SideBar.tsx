@@ -25,7 +25,11 @@ const SideBar = () => {
     <>
       {expand ? (
         <SideBarDiv>
-          <span role="presentation" onClick={onClickCollapse}>
+          <span
+            role="presentation"
+            onClick={onClickCollapse}
+            style={{ cursor: "pointer" }}
+          >
             사이드바 접기
           </span>
           <ul>
