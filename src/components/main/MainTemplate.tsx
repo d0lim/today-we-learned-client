@@ -6,8 +6,21 @@ type MainTemplateProps = {
   children: React.ReactNode;
 };
 
+const bp = ["360px", "768px", "1024px", "1440px"];
+let breakpoints = {
+  sm: "",
+  md: "",
+  lg: "",
+  xl: "",
+};
+breakpoints.sm = bp[0];
+breakpoints.md = bp[1];
+breakpoints.lg = bp[2];
+breakpoints.xl = bp[3];
+
 const customTheme = {
   ...theme,
+  breakpoints,
 };
 
 const MainTemplate = ({ children }: MainTemplateProps) => (
