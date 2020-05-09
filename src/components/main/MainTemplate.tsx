@@ -20,7 +20,7 @@ breakpoints.xl = bp[3];
 
 const customTheme = {
   ...theme,
-  breakpoints,
+  // breakpoints,
 };
 
 const MainTemplate = ({ children }: MainTemplateProps) => (

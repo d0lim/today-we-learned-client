@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 
 const SideBarDiv = styled.div`
-  width: 200px;
-  padding: 17px 10px 0;
-  background: black;
-  color: white;
+  width: 300px;
+  padding: 0;
+  background: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,34 +16,28 @@ const SideBarDiv = styled.div`
   li {
     list-style-type: none;
   }
+  border-right: 2px solid black;
+`;
+
+const SearchDiv = styled.div`
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
 `;
 
 const SideBar = () => {
-  const [expand, setExpand] = useState(true);
-  const onClickCollapse = () => setExpand(!expand);
   return (
-    <>
-      {expand ? (
-        <SideBarDiv>
-          <span
-            role="presentation"
-            onClick={onClickCollapse}
-            style={{ cursor: "pointer" }}
-          >
-            사이드바 접기
-          </span>
-          <ul>
-            <li>Menu Item 1</li>
-            <li>Menu Item 2</li>
-            <li>Menu Item 3</li>
-            <li>Menu Item 4</li>
-            <li>Menu Item 5</li>
-          </ul>
-        </SideBarDiv>
-      ) : (
-        <div></div>
-      )}
-    </>
+    <SideBarDiv>
+      <SearchDiv>Search...</SearchDiv>
+      <ul>
+        <li>Study</li>
+        <li>Exercise</li>
+        <li>Coffee</li>
+      </ul>
+    </SideBarDiv>
   );
 };
 
