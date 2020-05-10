@@ -1,5 +1,6 @@
 import React from "react";
-import { Flex, Textarea, Image, Button, Text } from "@chakra-ui/core";
+import { Flex, Image, Button, Text } from "@chakra-ui/core";
+import TextEditTabs from "./TextEditTabs";
 
 const UserInfo = () => {
   return (
@@ -31,11 +32,12 @@ const AddActivity = () => {
       ml="auto"
     >
       <UserInfo />
-      <Textarea
+      {/* <Textarea
         height="200px"
         resize="none"
         placeholder="Here is a sample placeholder"
-      />
+      /> */}
+      <TextEditTabs />
       <Button ml="5px" height="200px" variantColor="teal">
         Submit
       </Button>
