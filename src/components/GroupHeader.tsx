@@ -35,7 +35,6 @@ const GroupHeader = () => {
         <Text ml="1rem">Group for Study!</Text>
       </Flex>
       <Flex align="center" mr={6}>
-        {/* <Text>2020-05-05</Text> */}
         <DatePicker
           value={selectedDay}
           onChange={setSelectedDay}
