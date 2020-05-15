@@ -1,11 +1,9 @@
 import React from "react";
 import MainTemplate from "../../components/main/MainTemplate";
-// import Header from "../../components/common/Header";
 import styled from "@emotion/styled";
 import SideBar from "../../components/SideBar";
 import { Flex } from "@chakra-ui/core";
 import Feed from "../../components/common/Feed";
-// import DateControl from "../../components/DateControl";
 import GroupHeader from "../../components/GroupHeader";
 
 export type HomePageProps = {};
