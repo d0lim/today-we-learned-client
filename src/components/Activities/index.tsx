@@ -1,19 +1,18 @@
 import React from "react";
 import NewActivity from "./NewActivity";
-import styled from "@emotion/styled";
-
-const FeedDiv = styled.div`
-  // max-width: 800px;
-  // margin-right: auto;
-  // margin-left: auto;
-  margin-top: 80px;
-  padding: 5px 20px 5px;
-`;
+import { Box, Divider } from "@chakra-ui/core";
+import ActivityItem from "./ActivityItem";
 
 const Activities = () => (
-  <FeedDiv>
+  <Box maxWidth="800px" mr="auto" ml="auto" mt="80px" padding="5px 20px 5px">
     <NewActivity />
-  </FeedDiv>
+    <Divider />
+    <ActivityItem userName="test user" content="lorem ipsum fuck" />
+    <ActivityItem userName="test user" content="lorem ipsum fuck" />
+    <ActivityItem userName="test user" content="lorem ipsum fuck" />
+    <ActivityItem userName="test user" content="lorem ipsum fuck" />
+    <ActivityItem userName="test user" content="lorem ipsum fuck" />
+  </Box>
 );
 
 export default Activities;
