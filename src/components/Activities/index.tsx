@@ -1,6 +1,6 @@
 import React from "react";
+import NewActivity from "./NewActivity";
 import styled from "@emotion/styled";
-import AddActivity from "../AddActivity";
 
 const FeedDiv = styled.div`
   // max-width: 800px;
@@ -10,14 +10,10 @@ const FeedDiv = styled.div`
   padding: 5px 20px 5px;
 `;
 
-const Feed = () => {
-  return (
-    <>
-      <FeedDiv>
-        <AddActivity />
-      </FeedDiv>
-    </>
-  );
-};
+const Activities = () => (
+  <FeedDiv>
+    <NewActivity />
+  </FeedDiv>
+);
 
-export default Feed;
+export default Activities;

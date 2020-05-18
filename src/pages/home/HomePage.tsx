@@ -3,8 +3,8 @@ import MainTemplate from "../../components/main/MainTemplate";
 import styled from "@emotion/styled";
 import SideBar from "../../components/SideBar";
 import { Flex } from "@chakra-ui/core";
-import Feed from "../../components/common/Feed";
 import GroupHeader from "../../components/GroupHeader";
+import Activities from "../../components/Activities";
 
 export type HomePageProps = {};
 
@@ -21,7 +21,7 @@ const HomePage = (props: HomePageProps) => {
         {/* <DateControl /> */}
         <Content>
           <GroupHeader />
-          <Feed />
+          <Activities />
         </Content>
       </Flex>
     </MainTemplate>
