@@ -2,3 +2,6 @@
 
 ## Status
 Developing...
+
+## UI Library
+Uses Chakra-UI
