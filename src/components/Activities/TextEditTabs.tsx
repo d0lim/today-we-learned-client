@@ -14,11 +14,8 @@ import "github-markdown-css";
 
 const TextEditTabs = () => {
   const [value, setValue] = useState<string>("");
-  const onChangeValue = (e: any) => setValue(e.target.value);
-
-  // console.log(unified().use(parse).use(remark2react).processSync(value));
-
-  // FIXME: Have set processed to 'any' type as vFile types do not have 'result' property.
+  const onChangeValue = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setValue(e.target.value);
 
   return (
     <Tabs width="100%" defaultIndex={0}>
