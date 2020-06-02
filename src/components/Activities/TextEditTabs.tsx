@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import unified from "unified";
-import remark2react from "remark-react";
-import parse from "remark-parse";
+import ReactMarkdown from "react-markdown";
 import {
   Tabs,
   TabPanels,
@@ -21,12 +19,7 @@ const TextEditTabs = () => {
   // console.log(unified().use(parse).use(remark2react).processSync(value));
 
   // FIXME: Have set processed to 'any' type as vFile types do not have 'result' property.
-  const processed: any = unified()
-    .use(parse)
-    .use(remark2react)
-    .processSync(value);
-  const markdownResult = processed.result;
-  console.log(markdownResult);
+
   return (
     <Tabs width="100%" defaultIndex={0}>
       <TabPanels>
@@ -49,8 +42,8 @@ const TextEditTabs = () => {
             border="1px solid #E2E8F0"
             borderRadius="3px"
           >
-            {processed.contents ? (
-              markdownResult
+            {value !== "" ? (
+              <ReactMarkdown>{value}</ReactMarkdown>
             ) : (
               <Text color="lightGray">Input Text</Text>
             )}
