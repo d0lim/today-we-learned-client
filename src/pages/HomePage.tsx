@@ -1,10 +1,10 @@
 import React from "react";
-import MainTemplate from "../../components/main/MainTemplate";
+import MainTemplate from "../templates/MainTemplate";
 import styled from "@emotion/styled";
-import SideBar from "../../components/SideBar";
+import SideBar from "../components/SideBar";
 import { Flex } from "@chakra-ui/core";
-import GroupHeader from "../../components/GroupHeader";
-import Activities from "../../components/Activities";
+import GroupHeader from "../components/GroupHeader";
+import Activities from "../components/Activities";
 
 export type HomePageProps = {};
 
