@@ -6,4 +6,5 @@ Developing ...
 
 ## UI Library
 
-Uses Chakra-UI
+Uses Chakra-UI to simplify UI building
+.
